@@ -26,14 +26,14 @@ class SelectionSort {
         int n = array.length;
         
         for(int i = 0 ; i <n-1 ; i++){
-            int min = i;
+            int minIndex = i;
             for(int j = i+1; j<n; j++){
 
-                if(array[min]>array[j]){
-                    min =j;
+                if(array[minIndex]>array[j]){
+                    minIndex =j;
                     int temp = array[i];
-                    array[i]=array[min];
-                    array[min]=temp;
+                    array[i]=array[minIndex];
+                    array[minIndex]=temp;
                 }
             }
         
